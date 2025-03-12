@@ -1,0 +1,4 @@
+config-version: 2
+version: '1.0.0'
+name: 'raw_bank_project'
+profile: 'maker_warehouse'

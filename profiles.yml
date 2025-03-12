@@ -1,0 +1,12 @@
+maker_warehouse:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: postgres
+      port: 5433
+      dbname: mydb
+      schema: dbt_warehouse
+      threads: 4

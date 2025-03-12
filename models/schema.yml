@@ -1,0 +1,61 @@
+version: 2
+
+models:
+  - name: customers
+    description: "Table storing all customer data."
+    columns:
+      - name: customerid
+        description: "Unique identifier for each viewing event."
+        tests:
+          - unique
+          - not_null
+
+      - name: age
+        description: "Current age of customer"
+        tests:
+          - not_null
+          - is_numeric
+      
+      - name: gender
+        description: "Current age of customer"
+        tests:
+          - not_null
+          - is_alphabetical
+
+      - name: geography
+        description: "Customer location - should be a valid country from a predefined list."
+        tests:
+        - not_null
+        - accepted_values:
+            values: ["France", "Spain", "Germany"]
+            quote: true 
+
+      - name: tenure
+        description: "Number of years of customer's membership"
+        tests:
+          - not_null
+          - is_numeric
+
+
+      - name: cardtype
+        description: "Number of years of customer's membership"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["GOLD", "DIAMOND", "SILVER", "PLATINUM"]
+              quote: true
+
+      - name: estimatedsalary
+        description: "Estimated salary of customer"
+        tests:
+          - not_null
+          
+
+      - name: isactivemember
+        description: "Binary representation of whether a customer is an active member"
+        tests:
+        - not_null
+        - accepted_values:
+            values: [0, 1]
+            quote: true
+

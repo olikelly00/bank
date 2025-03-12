@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+    schema: public
+    tables:
+      - name: raw_banking
