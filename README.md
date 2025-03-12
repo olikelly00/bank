@@ -76,9 +76,9 @@ The data has been kept denormalised in a single table. This was a conscious desi
 - Raw data is tightly coupled with customers, making **denormalisation logical**
 
 ## Dashboard Screenshots
-![alt text](<Screenshot 2025-03-12 at 18.03.31.png>) 
+![alt text](<Screenshot1.png>) 
 
-![alt text](<Screenshot 2025-03-12 at 18.03.24.png>)
+![alt text](<Screenshot2.png>)
 
 
 ---
